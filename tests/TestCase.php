@@ -2,9 +2,9 @@
 
 namespace Codebar\LaravelDiskMonitor\Tests;
 
+use Codebar\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Codebar\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider;
 
 class TestCase extends Orchestra
 {
