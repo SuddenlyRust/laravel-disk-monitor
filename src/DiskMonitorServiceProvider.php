@@ -1,12 +1,12 @@
 <?php
 
-namespace Codebar\LaravelDiskMonitor;
+namespace Codebar\DiskMonitor;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Codebar\LaravelDiskMonitor\Commands\LaravelDiskMonitorCommand;
+use Codebar\DiskMonitor\Commands\DiskMonitorCommand;
 
-class LaravelDiskMonitorServiceProvider extends PackageServiceProvider
+class DiskMonitorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -20,6 +20,6 @@ class LaravelDiskMonitorServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_laravel_disk_monitor_table')
-            ->hasCommand(LaravelDiskMonitorCommand::class);
+            ->hasCommand(DiskMonitorCommand::class);
     }
 }

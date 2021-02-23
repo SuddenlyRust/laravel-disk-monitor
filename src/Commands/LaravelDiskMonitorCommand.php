@@ -1,10 +1,10 @@
 <?php
 
-namespace Codebar\LaravelDiskMonitor\Commands;
+namespace Codebar\DiskMonitor\Commands;
 
 use Illuminate\Console\Command;
 
-class LaravelDiskMonitorCommand extends Command
+class DiskMonitorCommand extends Command
 {
     public $signature = 'laravel-disk-monitor';
 

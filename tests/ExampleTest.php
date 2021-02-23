@@ -1,6 +1,6 @@
 <?php
 
-namespace Codebar\LaravelDiskMonitor\Tests;
+namespace Codebar\DiskMonitor\Tests;
 
 class ExampleTest extends TestCase
 {

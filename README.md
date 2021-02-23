@@ -27,13 +27,13 @@ composer require codebar/laravel-disk-monitor
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Codebar\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider" --tag="laravel-disk-monitor-migrations"
+php artisan vendor:publish --provider="Codebar\DiskMonitor\DiskMonitorServiceProvider" --tag="laravel-disk-monitor-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Codebar\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider" --tag="laravel-disk-monitor-config"
+php artisan vendor:publish --provider="Codebar\DiskMonitor\DiskMonitorServiceProvider" --tag="laravel-disk-monitor-config"
 ```
 
 This is the contents of the published config file:
@@ -46,7 +46,7 @@ return [
 ## Usage
 
 ```php
-$laravel-disk-monitor = new Codebar\LaravelDiskMonitor();
+$laravel-disk-monitor = new Codebar\DiskMonitor();
 echo $laravel-disk-monitor->echoPhrase('Hello, Codebar!');
 ```
 

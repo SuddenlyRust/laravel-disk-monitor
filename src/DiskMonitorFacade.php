@@ -1,13 +1,13 @@
 <?php
 
-namespace Codebar\LaravelDiskMonitor;
+namespace Codebar\DiskMonitor;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Codebar\LaravelDiskMonitor\LaravelDiskMonitor
+ * @see \Codebar\DiskMonitor\DiskMonitor
  */
-class LaravelDiskMonitorFacade extends Facade
+class DiskMonitorFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {

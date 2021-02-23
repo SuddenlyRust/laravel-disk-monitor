@@ -1,10 +1,10 @@
 <?php
 
-namespace Codebar\LaravelDiskMonitor\Tests;
+namespace Codebar\DiskMonitor\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Codebar\LaravelDiskMonitor\LaravelDiskMonitorServiceProvider;
+use Codebar\DiskMonitor\DiskMonitorServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Codebar\\LaravelDiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Codebar\\DiskMonitor\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            LaravelDiskMonitorServiceProvider::class,
+            DiskMonitorServiceProvider::class,
         ];
     }
 
