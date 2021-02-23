@@ -2,9 +2,9 @@
 
 namespace Codebar\DiskMonitor\Tests;
 
+use Codebar\DiskMonitor\DiskMonitorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Codebar\DiskMonitor\DiskMonitorServiceProvider;
 
 class TestCase extends Orchestra
 {
