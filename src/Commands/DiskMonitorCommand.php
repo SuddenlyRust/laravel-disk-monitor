@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class DiskMonitorCommand extends Command
 {
-    public $signature = 'laravel-disk-monitor';
+    public $signature = 'disk-monitor';
 
     public $description = 'My command';
 

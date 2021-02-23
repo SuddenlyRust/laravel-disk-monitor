@@ -2,13 +2,9 @@
 
 namespace Codebar\DiskMonitor;
 
-use Codebar\LaravelDiskMonitor\Commands\LaravelDiskMonitorCommand;
+use Codebar\DiskMonitor\Commands\DiskMonitorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-<<<<<<< HEAD:src/DiskMonitorServiceProvider.php
-use Codebar\DiskMonitor\Commands\DiskMonitorCommand;
-=======
->>>>>>> 84dc3eff42724409c1c1d991b0d01f1ae105dfcf:src/LaravelDiskMonitorServiceProvider.php
 
 class DiskMonitorServiceProvider extends PackageServiceProvider
 {
